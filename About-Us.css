@@ -3,15 +3,22 @@
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 541px;
+  min-height: 800px;
+}
+
+.u-section-1 .u-image-1 {
+  height: 277px;
+  margin-top: 1px;
+  margin-bottom: 0;
+  object-position: 50% 39.89%;
 }
 
 .u-section-1 .u-layout-wrap-1 {
-  margin: 60px auto 60px 0;
+  margin: 23px 0 1px;
 }
 
 .u-section-1 .u-layout-cell-1 {
-  min-height: 431px;
+  min-height: 500px;
 }
 
 .u-section-1 .u-container-layout-1 {
@@ -19,58 +26,44 @@
 }
 
 .u-section-1 .u-text-1 {
-  margin: 0 auto;
+  margin: 153px 0 0;
 }
 
 .u-section-1 .u-text-2 {
-  margin: 39px 0 0;
+  margin: 20px 0 0;
 }
 
-.u-section-1 .u-btn-1 {
-  margin: 33px auto 0;
+.u-section-1 .u-text-3 {
+  margin: 0;
 }
 
-.u-section-1 .u-image-1 {
-  min-height: 431px;
-  background-image: url("images/thumbnail.png");
-  background-position: 50% 50%;
+.u-section-1 .u-layout-cell-2 {
+  min-height: 500px;
 }
 
 .u-section-1 .u-container-layout-2 {
-  padding: 30px 60px;
+  padding: 20px;
 }
 
 @media (max-width: 1199px) {
   .u-section-1 .u-sheet-1 {
-    min-height: 100px;
+    min-height: 713px;
   }
 
   .u-section-1 .u-layout-wrap-1 {
     margin-right: initial;
     margin-left: initial;
   }
-
-  .u-section-1 .u-layout-cell-1 {
-    min-height: 355px;
-  }
-
-  .u-section-1 .u-image-1 {
-    min-height: 355px;
-  }
 }
 
 @media (max-width: 991px) {
-  .u-section-1 .u-layout-cell-1 {
-    min-height: 100px;
+  .u-section-1 .u-sheet-1 {
+    min-height: 617px;
   }
 
   .u-section-1 .u-container-layout-1 {
     padding-left: 30px;
     padding-right: 30px;
-  }
-
-  .u-section-1 .u-image-1 {
-    min-height: 272px;
   }
 
   .u-section-1 .u-container-layout-2 {
@@ -80,13 +73,17 @@
 }
 
 @media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 875px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: auto;
+  }
+
   .u-section-1 .u-container-layout-1 {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .u-section-1 .u-image-1 {
-    min-height: 408px;
   }
 
   .u-section-1 .u-container-layout-2 {
@@ -96,7 +93,7 @@
 }
 
 @media (max-width: 575px) {
-  .u-section-1 .u-image-1 {
-    min-height: 257px;
+  .u-section-1 .u-sheet-1 {
+    min-height: 699px;
   }
 }
