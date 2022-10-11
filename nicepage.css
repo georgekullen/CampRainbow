@@ -1710,7 +1710,7 @@ a {
   flex-shrink: 1;
   min-width: 0px;
 }
-.u-label-none:not(.u-form-agree) label {
+.u-label-none:not(.u-form-agree):not(.u-form-checkbox):not(.u-form-checkbox-group):not(.u-form-radiobutton) label {
   display: none !important;
 }
 .u-form-horizontal .input-group {
@@ -2056,6 +2056,10 @@ a {
 .u-form-file-upload .u-file-max {
   flex-basis: 100%;
   margin-top: 0.5em;
+  margin-bottom: 0;
+}
+.u-form-text .u-text {
+  margin-top: 0;
   margin-bottom: 0;
 }
 *,
@@ -5953,11 +5957,8 @@ ul.u-text li:last-child {
   content: '';
   display: inline-block;
   vertical-align: middle;
-  margin-left: 6px;
-  border-top: 0.2em solid;
-  border-right: 0.2em solid transparent;
-  border-bottom: 0;
-  border-left: 0.2em solid transparent;
+  height: 1em;
+  width: 1.5em;
 }
 .u-image,
 .u-background-effect-image,
@@ -37920,20 +37921,11 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 84px;
-}
-
-.u-header .u-btn-1 {
-  border-style: solid;
-  align-self: center;
-  font-size: 1rem;
-  font-weight: normal;
-  text-transform: none;
-  margin: 19px 0 0 auto;
+  min-height: 88px;
 }
 
 .u-header .u-menu-1 {
-  margin: -40px auto 0;
+  margin: 8px auto 0;
 }
 
 .u-header .u-nav-1 {
@@ -37947,39 +37939,56 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-image-1 {
-  width: 146px;
-  height: 58px;
-  margin: -47px auto 12px 0;
+  width: 185px;
+  height: 73px;
+  margin: -55px auto 0 0;
 }
 
 .u-header .u-logo-image-1 {
   width: 100%;
   height: 100%;
 }
+
+.u-header .u-btn-1 {
+  align-self: center;
+  margin: -59px 102px 0 auto;
+}
+
+.u-header .u-social-icons-1 {
+  white-space: nowrap;
+  height: 37px;
+  min-height: 16px;
+  width: 83px;
+  min-width: 42px;
+  margin: -41px 0 7px auto;
+}
+
+.u-header .u-icon-1 {
+  color: rgb(59, 89, 152) !important;
+}
+
+.u-header .u-icon-2 {
+  color: rgb(197, 54, 164) !important;
+}
 @media (max-width: 1199px) {
-  .u-header .u-menu-1 {
-    margin-top: -40px;
+  .u-header .u-image-1 {
+    margin-top: -55px;
+  }
+
+  .u-header .u-btn-1 {
+    margin-right: 0;
+  }
+
+  .u-header .u-social-icons-1 {
+    width: 83px;
   }
 }
 
 
 @media (max-width: 575px) {
-  .u-header .u-sheet-1 {
-    min-height: 138px;
-  }
-
-  .u-header .u-btn-1 {
-    margin-right: auto;
-    padding: 9px 74px 11px 73px;
-  }
-
   .u-header .u-menu-1 {
     width: auto;
     margin-right: 0;
-  }
-
-  .u-header .u-image-1 {
-    margin-bottom: 60px;
   }
 }
 .u-footer .u-sheet-1 {
@@ -37991,7 +38000,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-layout-cell-1 {
-  min-height: 121px;
+  min-height: 145px;
 }
 
 .u-footer .u-container-layout-1 {
@@ -37999,19 +38008,23 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-text-1 {
-  margin: 13px auto 0 0;
+  margin: 0 auto 0 0;
 }
 
 .u-footer .u-layout-cell-2 {
-  min-height: 121px;
+  min-height: 135px;
 }
 
 .u-footer .u-container-layout-2 {
   padding: 20px 0;
 }
 
+.u-footer .u-text-2 {
+  margin: 0 auto;
+}
+
 .u-footer .u-layout-cell-3 {
-  min-height: 121px;
+  min-height: 145px;
 }
 
 .u-footer .u-container-layout-3 {
@@ -38020,11 +38033,11 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-footer .u-social-icons-1 {
   white-space: nowrap;
-  height: 24px;
+  height: 37px;
   min-height: 16px;
-  width: 58px;
+  width: 83px;
   min-width: 42px;
-  margin: 0 20px 0 auto;
+  margin: 0 23px 0 auto;
 }
 
 .u-footer .u-icon-2 {
@@ -38045,12 +38058,20 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-layout-cell-1 {
-    min-height: 100px;
+    min-height: 120px;
   }
 
   .u-footer .u-container-layout-1 {
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  .u-footer .u-layout-cell-2 {
+    min-height: 111px;
+  }
+
+  .u-footer .u-layout-cell-3 {
+    min-height: 121px;
   }
 
   .u-footer .u-container-layout-3 {
@@ -38059,13 +38080,22 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-social-icons-1 {
+    width: 83px;
     margin-right: 0;
   }
 }
 @media (max-width: 991px) {
+  .u-footer .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
   .u-footer .u-container-layout-1 {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .u-footer .u-layout-cell-2 {
+    min-height: 100px;
   }
 
   .u-footer .u-container-layout-3 {
