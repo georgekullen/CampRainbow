@@ -6,6 +6,16 @@
   min-height: 465px;
 }
 
+.rainbow{
+  font-size: 60pt;
+  background-repeat: repeat-x;
+  background-size: 8ch 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); 
+}  
+
 .u-section-1 .u-layout-wrap-1 {
   margin-top: 37px;
   margin-bottom: 0;
